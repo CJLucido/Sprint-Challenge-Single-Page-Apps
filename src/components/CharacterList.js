@@ -10,7 +10,10 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      <h2></h2>
     </section>
   );
 }
+
+
+//TODO: `array.map()` over your state here! in the H2 above
