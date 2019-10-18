@@ -6,26 +6,31 @@ import SearchForm from './SearchForm';
 
  function LocationsList() {
   const [locations, setLocations] = useState([]);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     axios.get(`https://rickandmortyapi.com/api/location/`)
     .then(res => {
       console.log("this is from locationList", res);
-     setLocations(res.data.results)
+      const places = res.data.results.filter(place => place.name.toLowerCase().includes(query.toLowerCase()))
+     setLocations(places)
     })
-  }, [])
+  }, [query])
 
 
   // TODO: Add useState to track data from useEffect
 
-  useEffect(() => {
+  const eventHandle = event => {
+    setQuery(event.target.value);
+  }
+  
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, []);
+ 
 
   return (
     <section className="character-list">
-      <SearchForm/>
+      <SearchForm eventHandle={eventHandle} query={query}/>
       <h2>{locations.map( (local, index ) => 
         (<LocationCard key={index} name={local.name} dimension={local.dimension} type={local.type} />)
         )}</h2>
