@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios"
 
 import LocationCard from "./LocationCard"
+import SearchForm from './SearchForm';
 
  function LocationsList() {
   const [locations, setLocations] = useState([]);
@@ -24,6 +25,7 @@ import LocationCard from "./LocationCard"
 
   return (
     <section className="character-list">
+      <SearchForm/>
       <h2>{locations.map( (local, index ) => 
         (<LocationCard key={index} name={local.name} dimension={local.dimension} type={local.type} />)
         )}</h2>
