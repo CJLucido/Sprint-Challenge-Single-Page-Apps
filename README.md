@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-side routing MIMICS traditional multi-page websites, but because everything loads on the first request (and is waiting to be displayed), we don't have to rerender the site everytime a user clicks a link/route. This gives the user the perception of a faster loading webpage (and many times the webpage is actually loading faster)! The browser takes care of the URL history, so we still get the benefit of the history api.
 
 ## Project Set Up
 
