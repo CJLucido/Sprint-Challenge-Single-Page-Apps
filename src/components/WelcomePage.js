@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import LocationList from './LocationsList'
 import CharacterList from "./CharacterList"
+import EpisodeList from "./EpisodeList"
 
 export default function WelcomePage() {
 
@@ -39,12 +40,17 @@ export default function WelcomePage() {
               <li>
                 <Link to="/location">Location</Link>
               </li>
+
+              <li>
+              <Link to="/episode">Episode</Link>
+              </li>
             </StyledUl>
           </nav>
 
           <Switch>
             <Route path="/location" component={LocationList} />
-            <Route path="/" component={CharacterList} />
+            <Route exact path="/" component={CharacterList} />
+            <Route path="/episode" component={EpisodeList}/>
           </Switch>
         </StyledDiv>
       </header>
