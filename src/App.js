@@ -1,9 +1,9 @@
 import React from "react";
 
 
-import Header from "./components/Header.js";
-import SearchForm from "./components/SearchForm.js"
-import WelcomePage from "./components/WelcomePage.js"
+import Header from "./components/Header";
+import SearchForm from "./components/SearchForm"
+import WelcomePage from "./components/WelcomePage"
 
 
 export default function App() {
