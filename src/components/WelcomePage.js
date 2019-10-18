@@ -19,7 +19,7 @@ export default function WelcomePage() {
       
   
   `
- //////////////////////////////////////UNCOMMENT THE API WHEN READY///////////////
+ 
   return (
     <Router>
     <section className="welcome-page">
@@ -28,7 +28,7 @@ export default function WelcomePage() {
         <h1>Welcome to the ultimate fan site!</h1>
         <img
           className="main-img"
-          //src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+          src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
 
