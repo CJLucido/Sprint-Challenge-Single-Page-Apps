@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledLocal = styled.div`
+const StyledShow = styled.div`
     display:flex;
     background-color: rgba(255, 151, 19);
     border-radius: 22px;
@@ -11,16 +11,12 @@ const StyledLocal = styled.div`
     z-index:: -1;
 `
 
-export default function LocationCard({ name, type, dimension }) { //add residents some other time
+export default function EpisodeCard({name}) { 
   return(
-    <StyledLocal>
+    <StyledShow>
         <h2>{name}</h2>
-        <p>{type}</p>
-        <p>{dimension}</p>
+ 
         
-    </StyledLocal>
+    </StyledShow>
   );
 }
-
-
-//<p>{residents}</p>
