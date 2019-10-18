@@ -14,9 +14,8 @@ export default function WelcomePage() {
   `
 
   const StyledUl = styled.ul`
-      display: flex;
       margin-left: 50%;
-      
+      margin-bottom: 10%
   
   `
  

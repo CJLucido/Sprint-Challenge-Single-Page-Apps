@@ -5,9 +5,10 @@ const StyledPerson = styled.div`
     display:flex;
     background-color: rgba(255, 151, 19);
     border-radius: 22px;
-    width: 25%;
     margin-bottom: 2%;
     margin-right: 2%
+    margin-top: 10%;
+    padding: 0
 `
 
 

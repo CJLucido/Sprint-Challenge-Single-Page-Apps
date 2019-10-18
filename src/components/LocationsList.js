@@ -25,7 +25,7 @@ import LocationCard from "./LocationCard"
   return (
     <section className="character-list">
       <h2>{locations.map( (local, index ) => 
-        (<LocationCard key={index} name={local.name} dimension={local.dimension} />)
+        (<LocationCard key={index} name={local.name} dimension={local.dimension} type={local.type} />)
         )}</h2>
     </section>
   );
