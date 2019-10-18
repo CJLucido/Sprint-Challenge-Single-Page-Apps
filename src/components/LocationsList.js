@@ -17,16 +17,10 @@ import SearchForm from './SearchForm';
     })
   }, [query])
 
-
-  // TODO: Add useState to track data from useEffect
-
   const eventHandle = event => {
     setQuery(event.target.value);
   }
-  
-    // TODO: Add API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
- 
+
 
   return (
     <section className="character-list">

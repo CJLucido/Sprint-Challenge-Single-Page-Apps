@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import styled from 'styled-components'
 
 import LocationList from './LocationsList'
@@ -51,6 +51,7 @@ export default function WelcomePage() {
             <Route path="/location" component={LocationList} />
             <Route exact path="/" component={CharacterList} />
             <Route path="/episode" component={EpisodeList}/>
+            <Redirect from="*" to="/"/>
           </Switch>
         </StyledDiv>
       </header>
